@@ -122,6 +122,40 @@ main {
   line-height: 23px;
 }
 
+.container .profile-data .stats{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* STATS */
+
+.followers,
+.following{
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 15px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.followers:hover,
+.following:hover{
+  background-color: hotpink;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .stats{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* END STATS */
+
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{
@@ -144,9 +178,30 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+/* REPOSITORIES STATS */
+
+.container .profile-data .repositories .repo-info{
+  margin-top: 20px;
+}
+
+.container .profile-data .repositories .repo-info span{
+  background-color: pink;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 7px;
+  transition: .3s ease-in-out;
+}
+
+/* END REPOSITORIES STATS */
+
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
-  color: #fff
+  color: #fff;
+  
+  & span{
+    color: black;
+  }
 }
 
 .container .profile-data.hide{
@@ -193,4 +248,30 @@ main {
     width: 100%;
     padding: 0;
   }
+}
+
+/* EVENTS */
+
+.container .profile-data .events{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 7px;
+  border: 1px solid grey;
+  transition: .3s ease-in-out;
+}
+
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+}
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .profile-data .events ul li strong{
+  font-weight: bold;
 }
