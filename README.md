@@ -27,5 +27,7 @@ Some updates were made to the project, adding new functionalities such as:
   - The list of repositories should now display the number of forks, stars, views, and the programming language used in the repository.
  
 ## Final layout
+<img src="./src/images/api-github.gif">
 
 ## Mobile layout
+<img src="./src/images/api-github-mobile.gif">
